@@ -3,11 +3,16 @@ cmake_minimum_required(VERSION 3.10)
 set(This ${CMAKE_PROJECT_NAME})
 
 set(Headers 
-    Example.hpp
+    hal/register.hpp
 )
 
 set(Sources
-    Example.cpp
+
+    main.cpp
+
+    hal/register.cpp
+
+    spi/read.cpp
 )
 
 add_executable(${This}_run ${Sources})
