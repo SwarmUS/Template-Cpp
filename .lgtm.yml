@@ -1,0 +1,20 @@
+#
+# .lgtml.yml configuration file for C++ analysis
+#
+queries:
+    - exclude: tests/external
+extraction:
+    cpp:
+        prepare:
+            packages:
+                - build-essential
+                - cmake
+        configure:
+            command:
+                - mkdir build
+                - cd build
+                - cmake ..
+        index:
+            build_command:
+                - cd build
+                - make
