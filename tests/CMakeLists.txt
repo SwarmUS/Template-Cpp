@@ -7,6 +7,8 @@ set(Sources
     main.cpp
 
     src/hal/hal_tests.cpp
+
+    src/spi/spi_tests.cpp
 )
 
 add_executable(${THIS} ${Sources})
