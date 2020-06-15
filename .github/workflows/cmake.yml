@@ -1,0 +1,32 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  CMAKE_TEST_PORJECT_PATH: build/tests
+  CMAKE_TEST_PORJECT_NAME: Template_CXX_tests
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: prepare
+      run: |
+        mkdir -p build
+        cd build
+        cmake ..
+    - name: build
+      run: |
+        cd build
+        make -j
+        make install
+    - name: check
+      run: "${CMAKE_TEST_PORJECT_PATH}/${CMAKE_TEST_PORJECT_NAME}"
+        

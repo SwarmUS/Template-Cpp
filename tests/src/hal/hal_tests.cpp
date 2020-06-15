@@ -17,10 +17,10 @@ protected:
 };
 
 TEST_F(HalTestFixture, Register_Read_Address1_Returns1) {
-  ASSERT_EQ(hal.readRegister(1), 1);
+  ASSERT_EQ(hal.readRegister(1), 2);
 }
 
 TEST_F(HalTestFixture, Register_Read_AddressNeg_Returns1) {
-  ASSERT_EQ(hal.readRegister(-1), 1);
+  ASSERT_EQ(hal.readRegister(-1), 0);
 }
 
