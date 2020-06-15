@@ -3,6 +3,7 @@
 #
 
 extraction:
+    cpp:
       index:
         exclude:
           - .git
