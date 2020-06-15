@@ -25,6 +25,7 @@ protected:
     }
 
     void TearDown() override {
+        delete(hal_mock_);
     }
 };
 
