@@ -2,9 +2,9 @@
 # .lgtml.yml configuration file for C++ analysis
 #
 
-extraction:
-    cpp:
-      index:
-        exclude:
-          - .git
-          - tests/external
+path_classifiers:
+    test:
+        - exclude: /
+        
+        - tests
+        - exclude: tests/external
