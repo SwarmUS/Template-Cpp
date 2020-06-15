@@ -14,7 +14,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    with:
+        submodules: true
     steps:
     - uses: actions/checkout@v2
     - name: prepare
