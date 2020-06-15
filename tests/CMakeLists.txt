@@ -5,8 +5,8 @@ add_subdirectory(external)
 
 set(Sources
     main.cpp
-    src/spi/read_tests.cpp
-    src/hal/register_tests.cpp
+
+    src/hal/hal_tests.cpp
 )
 
 add_executable(${THIS} ${Sources})
@@ -14,6 +14,7 @@ add_executable(${THIS} ${Sources})
 
 target_link_libraries(${THIS} PUBLIC
     gtest
+    gmock
     ${CMAKE_PROJECT_NAME}_lib
 )
 
