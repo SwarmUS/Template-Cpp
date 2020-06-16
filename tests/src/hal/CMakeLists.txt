@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.2)
-set(THIS spi_tests)
+set(THIS hal_tests)
 
 set(SOURCES
-    spi_tests.cpp
+    hal_tests.cpp
 )
 
 add_executable(${THIS} ${SOURCES})
@@ -14,13 +14,13 @@ target_include_directories(${THIS} PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(${THIS} PUBLIC
 #external
     gtest
-    gmock
+#    gmock
     gtest_main
 
 #internal code
-    spi
     hal
 )
+
 
 #For those who uses ctest
 add_test(NAME ${THIS} COMMAND ${THIS})

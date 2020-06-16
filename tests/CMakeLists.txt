@@ -1,28 +1,2 @@
-cmake_minimum_required(VERSION 3.2)
-set(THIS "${CMAKE_PROJECT_NAME}_tests")
-
 add_subdirectory(external)
-
-set(Sources
-    main.cpp
-
-    src/hal/hal_tests.cpp
-
-    src/spi/spi_tests.cpp
-)
-
-add_executable(${THIS} ${Sources})
-#including headers
-target_include_directories(${THIS} PUBLIC ${PROJECT_SOURCE_DIR}/include)
-
-target_link_libraries(${THIS} PUBLIC
-    gtest
-    gmock
-    spi
-    hal
-)
-
-add_test(
-    NAME ${THIS}
-    COMMAND ${THIS}
-)
+add_subdirectory(src)
