@@ -7,9 +7,33 @@ When creating a new repo you can select the Template-Cpp as template instead of 
 
 ## Hierachy
 
-Each folder under src is a library and the main creates an executable
-The libraries are reused for unit testing
+Each folder under src is a library and the main creates an executable.
+The libraries are reused for unit testing.
 The include folder are where the public headers should be put.
+
+The include, src and test/src should all have a very similar structure
+
+Note that in the provided example, the spi library is dependant on the hal library
+
+````
+
+Template-Cpp/
+|-- build/
+|-- CMakeLists.txt
+|-- include/
+|   |-- hal             #hal header files
+|   |-- spi             #spi header files
+|-- src/
+|   |-- hal             #hal library files
+|   |-- spi             #spi library files
+|   `-- main.cpp        #main.cpp, application file
+|-- tests/
+|   |-- external        #folder with external submodule dependency (google tests)
+|   |-- src             #tests location
+|       |-- hal             #hal unit tests files
+|       |-- spi             #spi unit tests files
+
+````
 
 ## Usage
 First clone the repo with the submodules
