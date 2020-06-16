@@ -29,5 +29,5 @@ jobs:
     - name: tests
       run: |
         cd build
-        make test -v
+        ctest -V
         
