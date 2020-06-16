@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../../../src/hal/hal.hpp"
+#include "hal/hal.hpp"
 
 class HalTestFixture : public testing::Test {
 

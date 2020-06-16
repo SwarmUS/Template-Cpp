@@ -1,7 +1,7 @@
 #ifndef SPI_READ_H
 #define SPI_READ_H
 
-#include "../hal/ihal.hpp"
+#include "hal/ihal.hpp"
 
 class Spi
 {

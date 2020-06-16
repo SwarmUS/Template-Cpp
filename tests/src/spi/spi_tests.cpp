@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include "../../../src/spi/spi.hpp"
+#include "spi/spi.hpp"
 
 using ::testing::Return;
 using ::testing::Test;
