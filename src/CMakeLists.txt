@@ -1,22 +1,18 @@
 set(THIS ${CMAKE_PROJECT_NAME})
 
-set(Headers 
-
-)
-
-set(Sources
+#other sources
+set(SOURCES
     
 )
 
 add_subdirectory(hal)
 add_subdirectory(spi)
 
-add_executable(${THIS} main.cpp ${Sources})
+add_executable(${THIS} main.cpp ${SOURCES})
 
 #linking dependencies
 target_link_libraries(${THIS} PUBLIC 
   spi
-  hal
 )
 
 #including headers

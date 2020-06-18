@@ -12,8 +12,7 @@ target_include_directories(${THIS} PUBLIC ${PROJECT_SOURCE_DIR}/include)
 #allows to include "spi.hpp" instead of "spi/spi.hpp"
 target_include_directories(${THIS} PUBLIC ${PROJECT_SOURCE_DIR}/include/${THIS})
 
-# The following line is very practical:
-# it will allow you to automatically add the correct include directories with "target_link_libraries"
+# Allows to automatically add the correct include directories with "target_link_libraries"
 target_include_directories(${THIS} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 #adding dependencies
