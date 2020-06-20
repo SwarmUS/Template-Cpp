@@ -1,9 +1,9 @@
 # Template-Cpp
 
 This is a template repo for C++ for Swarmus.
-It's goal is to have a ready project for C/C++ with unit testing without requiring a lot of knowledge in CMake 
+It's goal is to have a ready project for C/C++ with unit testing and kickstart development.
 
-This is a basic template, you will need more knowledge of CMake as your project grows. You can learn more [here](https://cmake.org/cmake/help/latest/guide/tutorial/index.html) or for quick reference go [here](https://learnxinyminutes.com/docs/cmake/)
+This is a basic template, you will need more knowledge of CMake as your project grows. You can learn more [here](https://cmake.org/cmake/help/latest/guide/tutorial/index.html) or, for a quick reference, go [here](https://learnxinyminutes.com/docs/cmake/)
 
 ## Hierachy
 
