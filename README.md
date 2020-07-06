@@ -26,7 +26,6 @@ Template-Cpp/
 |   |-- spi             #spi library files
 |   `-- main.cpp        #main.cpp, application file
 |-- tests/
-|   |-- external        #folder with external submodule dependency (google tests)
 |   |-- src             #tests location
 |       |-- hal             #hal unit tests files
 |       |-- spi             #spi unit tests files
@@ -39,13 +38,9 @@ When creating a new repo you can select the Template-Cpp as template instead of 
 You will need to change the CMakesLists to fit your needs, folders under `src` are libraries, you need to adapt the file `src/CMakeLists.txt` so it reflects your own libraries. You will need to change `tests/src/CMakeLists.txt` too so it reflects your changes. 
 
 ## Build
-First clone the repo with the submodules
+First clone the repo
 
-```git clone --recurse-submodules https://github.com/SwarmUS/Template-Cpp.git```
-
-If you already cloned the repo, you can init the submodules 
-
-```git submodule update --init --recursive```
+```git clone https://github.com/SwarmUS/Template-Cpp.git```
 
 Then you build the project
 
